@@ -2,3 +2,5 @@
 https://www.jianshu.com/p/bce1c6782f37
 
 将启动页和MainActivity主布局合并在一起，而且在渲染Splash页面的时候，MainActivity的主布局是放在ViewStub里面的。同时数据可以在Splash页面展示的时候就进行加载，用户感知不到。
+
+ViewStub就是一个宽高都为0的一个View，它默认是不可见的，只有通过调用setVisibility函数或者Inflate函数才 会将其要装载的目标布局给加载出来，从而达到延迟加载的效果，这个要被加载的布局通过android:layout属性来设置。
